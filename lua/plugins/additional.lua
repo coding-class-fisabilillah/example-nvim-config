@@ -200,7 +200,7 @@ return {
           session = "local",
         },
         explorer = {
-          cmd = "nnn -G -o",
+          cmd = "nnn -o",
           session = "local",
         },
         quitcd = "cd",
