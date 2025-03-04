@@ -90,7 +90,7 @@ return {
     end,
     keys = {
       {
-        "<leader>a",
+        "<leader>ah",
         function()
           local conf = require("telescope.config").values
           local function toggle_telescope(harpoon_files)
@@ -115,7 +115,7 @@ return {
         desc = "Open harpoon window",
       },
       {
-        "<leader>A",
+        "<leader>AH",
         function()
           require("harpoon"):list():append()
         end,
@@ -195,7 +195,7 @@ return {
     config = function()
       require("nnn").setup({
         picker = {
-          cmd = "tmux new-session nnn -Pp",
+          cmd = "tmux new-session -A -s nnnpicker nnn -Pp",
           style = { border = "rounded" },
           session = "local",
         },
@@ -211,8 +211,8 @@ return {
       })
     end,
     keys = {
-      { "<leader>nn", ":NnnExplorer<cr>" },
-      { "<leader>np", ":NnnPicker<cr>" },
+      { "<leader>nn", ":NnnExplorer %:p:h<cr>" },
+      { "<leader>np", ":NnnPicker %:p:h<cr>" },
     },
   },
 }
