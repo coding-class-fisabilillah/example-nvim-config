@@ -9,3 +9,6 @@ data
 backup
 {}
 -
+blender.lua
+ollama.lua
+treesitter.lua
