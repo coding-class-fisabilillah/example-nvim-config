@@ -1,3 +1,10 @@
+-- table mode vim config
+vim.api.nvim_set_var("table_mode_corner_corner", "+")
+vim.api.nvim_set_var("table_mode_header_fillchar", "=")
+
+vim.opt.wrap = true
+--vim.opt.linebreak = true
+--vim.opt.columns = 120
 -- required in which-key plugin spec in plugins/ui.lua as `require 'config.keymap'`
 local wk = require("which-key")
 
